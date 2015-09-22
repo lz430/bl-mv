@@ -1,0 +1,6 @@
+.top-nav ul {
+  float: right;
+}
+.top-nav ul li {
+  display: inline-block;
+}
