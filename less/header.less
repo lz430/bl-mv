@@ -47,12 +47,26 @@
   width: auto;             
 }
 /* -------------------------------------- *\
-    Overrides for top nav
+    Top nav
 \* -------------------------------------- */
 .top-nav{
   float: right;
   ul.menu{
-    
+    float:left;
+
+    li{
+      display: inline-block;
+      padding: 10px;
+      border-right:1px solid @brown;
+
+      a{
+        font:normal 13px/26px 'Arial';
+        color: @brown;
+      }
+    }
+  }
+  .phone-hours{
+    float:right;
   }
 }
 
