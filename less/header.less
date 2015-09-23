@@ -1,6 +1,8 @@
 /* header
 -------------------------------------------------------------- */
-.header{position: relative;}
+.header{position: relative;
+  .container{margin-top:25px;}
+}
 .header-content-wrapper {
   float: left;
   width: 100%;                  
@@ -62,7 +64,7 @@
 .top-nav{
   position:absolute;
   top:18px;
-  right:15px;
+  right:14%;
   width: 50%;
 
   ul.menu{
@@ -100,6 +102,11 @@
     p{text-align: right;.font-arial;font-size: 14px;color:@brown;}
     .cart{display: inline-block;}
     .glyphicon-play{font-size:9px;color:@green;top: -1px;}
+  }
+
+  .searchform-wrapper{
+    input[type=text]{float:right;width: 100%;}
+    input[type=image]{width:20px;}
   }
 }
 
@@ -164,245 +171,25 @@
 .header-image-wrapper .header-image img {
   display: block;                                        
 }
+.navbar-default{background:transparent;}
+.navbar-nav{
+  .green-gradient;
+  border-bottom:2px solid #b08e5c;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
 
-/* header menu */
-/* 
-This copyright notice must be untouched at all times.
-The original version of this stylesheet and the associated (x)html
-is available at http://www.cssplay.co.uk/menus/final_drop3.html
-Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
-This stylesheet and the associated (x)html may be modified in any 
-way to fit your requirements. */
-.menu-box-wrapper {
-  width: 100%;                  
-}
-.menu-box ul {
-  border-left: 1px solid #ededed;
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  position: relative;
-  text-align: left;
-}
-.menu-box ul ul {
-  background: #e8e8e8;
-  border-left: none;
-  z-index: 110;
-}
-.menu-box ul li {
-  border-right: 1px solid #ededed;
-  float: left;
-  height: 40px;
-  line-height: 40px;
-  margin: 0;
-  position: relative;
-}
-.menu-box ul ul li {
-  border-bottom: 1px solid #d9d9d9;
-  border-right: none;
-  display: block;
-  height: auto;
-  line-height: 34px;
-  margin: 0;
-  min-height: 34px;
-  position: relative;
-  width: 223px;
-}
-#wrapper #header .menu-box ul ul .last-menu-item {
-  border-bottom: none;                          
-}
-.menu-box a,
-.menu-box a:visited {
-  color: #636363;
-  display: block;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 23px;
-  text-decoration: none;
-}
-#header .menu-box ul ul a,
-#header .menu-box ul ul a:visited {
-  color: #333333 !important;
-  display: block;
-  font-size: 13px;
-  font-weight: normal;
-  height: auto;
-  line-height: 34px;
-  margin: 0;
-  min-height: 34px;
-  padding: 0 0 0 23px;
-  text-align: left;
-  width: 200px;
-}
-#header .menu-box ul ul ul a,
-#header .menu-box ul ul ul a:visited {
-  color: #444444 !important;
-}
-.menu-box a:hover,
-.menu-box :hover > a {
-  background-color: #dff8f6;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-#header .menu-box ul ul a:hover,
-#header .menu-box ul ul :hover > a {
-  background-color: #dbdbdb !important;
-  color: black !important;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-.menu-box ul ul {
-  height: 0;
-  position: absolute;
-  left: 0px;
-  top: 40px;
-  visibility: hidden;
-  width: 223px; 
-}
-.menu-box ul ul ul {
-  left: 223px;
-  top: 0;
-  width: 223px;
-}
-.menu-box ul li:hover ul,
-.menu-box ul a:hover ul,
-.top-navigation ul li:hover ul,
-.top-navigation ul a:hover ul {
-  height: auto;
-  padding-bottom: 0;
-  visibility: visible;
-}
-.menu-box ul :hover ul ul,
-.top-navigation ul :hover ul ul {
-  visibility: hidden;
-}
-.menu-box ul :hover ul :hover ul ul,
-.top-navigation ul :hover ul :hover ul ul {
-  visibility: hidden;
-}
-.menu-box ul :hover ul :hover ul,
-.top-navigation ul :hover ul :hover ul {
-  visibility: visible;
-}
-.menu-box ul :hover ul :hover ul :hover ul,
-.top-navigation ul :hover ul :hover ul :hover ul {
-  visibility: visible;
-}
-#header .menu-box .current-menu-item > a,
-#header .menu-box .current-menu-ancestor > a,
-#header .menu-box .current_page_item > a,
-#header .menu-box .current-page-ancestor > a {
-  background-color: #dff8f6;
-  color: black;
-}
-#header .menu-box .sub-menu .current-menu-item > a,
-#header .menu-box .sub-menu .current-menu-ancestor > a,
-#header .menu-box .sub-menu .current_page_item > a,
-#header .menu-box .sub-menu .current-page-ancestor > a {  
-  background-color: #e8e8e8;
-  color: black !important;
-}
+    > li{
+          border-right:1px solid #4d670d;
 
-/* top navigation */
-.top-navigation {
-  min-height: 38px;               
-}
-.top-navigation ul {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  max-width: 890px;
-  position: relative;
-}
-.top-navigation ul ul {
-  border: none;
-  background: #444444;
-  margin: 0;
-  width: 250px;
-  z-index: 110;
-}
-.top-navigation ul li {
-  float: left;
-  height: 38px;
-  line-height: 38px; 
-  margin: 0;
-  position: relative;
-}
-.top-navigation ul ul li {
-  border-bottom: 1px solid #333333;
-  display: block;
-  height: auto;
-  line-height: 30px;
-  margin: 0;
-  min-height: 30px;
-  position: relative;
-  width: 250px;
-}
-#wrapper #top-navigation-wrapper .top-navigation ul ul .last-menu-item {
-  border-bottom: none;                          
-}
-.top-navigation a,
-.top-navigation a:visited {
-  color: #ededed;
-  display: block;
-  float: left;
-  font-size: 13px;
-  height: 38px;
-  line-height: 38px;
-  padding: 0 14px;
-  text-align: center;
-  text-decoration: none;
-}
-#wrapper #top-navigation-wrapper .top-navigation ul ul a,
-#wrapper #top-navigation-wrapper .top-navigation ul ul a:visited { 
-  color: #ededed;
-  display: block;
-  font-size: 13px;
-  font-weight: normal;
-  height: auto;
-  line-height: 30px;
-  margin: 0;
-  min-height: 30px;
-  padding: 0 0 0 14px;
-  text-align: left;
-  width: 236px;
-}
-.top-navigation ul a:hover,
-.top-navigation ul :hover > a {
-  background-color: #666666;
-  color: #ffffff;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-#wrapper #top-navigation-wrapper .top-navigation ul ul a:hover,
-#wrapper #top-navigation-wrapper .top-navigation ul ul :hover > a {
-  background-color: #666666;
-  color: white;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-.top-navigation ul ul {
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 38px;
-  visibility: hidden;
-  width: 250px; 
-}
-.top-navigation ul ul ul {
-  left: 250px;
-  top: 0;
-  width: 250px;
-}
-#wrapper #top-navigation-wrapper .top-navigation .current-menu-item > a,
-#wrapper #top-navigation-wrapper .top-navigation .current-menu-ancestor > a,
-#wrapper #top-navigation-wrapper .top-navigation .current_page_item > a,
-#wrapper #top-navigation-wrapper .top-navigation .current-page-ancestor > a {
-  color: white;
-}
-.selectnav {
-  display: none;
-} 
+      > a{
+          color:#fff;
+          .font-arial;
+          font-size:12px;
+          line-height: 20px;
+          padding: 10px;
+          display: block;
+        }
+          :last-of-type{border-right:none;}
+    }
+  }
