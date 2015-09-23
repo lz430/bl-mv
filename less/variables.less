@@ -5,3 +5,52 @@
 // Primary Colors
 @green: #536f0c;
 @brown: #6e492a;
+
+// Roboto Font
+@font-face {
+  font-family: 'roboto_slabthin';
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-Thin-webfont.eot');
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-Thin-webfont.woff') format('woff'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-Thin-webfont.ttf') format('truetype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-Thin-webfont.svg#roboto_slabthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-regular-webfont.eot');
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-regular-webfont.woff') format('woff'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-regular-webfont.ttf') format('truetype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-regular-webfont.svg#roboto_slabthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slabbold';
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-bold-webfont.eot');
+  src: url('../fonts/web-fonts/robotoslab/RobotoSlab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-bold-webfont.woff') format('woff'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-bold-webfont.ttf') format('truetype'),
+       url('../fonts/web-fonts/robotoslab/RobotoSlab-bold-webfont.svg#roboto_slabthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-roboto-thin{font-family: 'roboto_slabthin';}
+.font-roboto-regular{font-family: 'roboto_slabregular';}
+.font-roboto-bold{font-family: 'roboto_slabbold';}
+.font-arial{font-family: 'arial'}
+
+
+.cart{background:url(images/icon-cart.png) no-repeat center center;height:19px;width: 24px;}
+
+.searchform-wrapper input[type=text]{
+  border:1px solid @brown;
+  .font-arial; 
+  font-size:14px;
+  line-height: 18px;
+  padding: 5px;
+}

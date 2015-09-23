@@ -1,5 +1,6 @@
 /* header
 -------------------------------------------------------------- */
+.header{position: relative;}
 .header-content-wrapper {
   float: left;
   width: 100%;                  
@@ -46,30 +47,61 @@
   position: relative;
   width: auto;             
 }
+
+.header-message {
+  text-align: center;
+  margin-top: 40px;
+    
+    h3{color:@green;.font-roboto-regular;font-size:20px;line-height: 30px;margin:0;}
+    h5{color:@brown;font:normal 13px/18px 'Arial';margin:0;}
+}
+
 /* -------------------------------------- *\
     Top nav
 \* -------------------------------------- */
 .top-nav{
-  float: right;
+  position:absolute;
+  top:18px;
+  right:15px;
+  width: 50%;
+
   ul.menu{
     float:left;
-
+    margin: 0;
+    
     li{
       display: inline-block;
-      padding: 10px;
-      border-right:1px solid @brown;
-
       a{
-        font:normal 13px/26px 'Arial';
+        font:normal 13px/13px 'Arial';
         color: @brown;
+        padding:0 10px;
+        border-right:1px solid @brown;
       }
     }
   }
+  
   .phone-hours{
     float:right;
+    text-align: center;
+    h4 {
+      margin: 0;
+    
+      a{.font-roboto-bold;font-size: 18px;font-weight: bold;color:@green;}
+    }
+      h5{font:normal 12px/12px 'Arial';color:@brown;margin:0;}
   }
 }
+.cart-container{
+  padding-right:0;
+  float:right;
 
+  .cart-wrapper{
+    margin-top: 50px; 
+    p{text-align: right;.font-arial;font-size: 14px;color:@brown;}
+    .cart{display: inline-block;}
+    .glyphicon-play{font-size:9px;color:@green;top: -1px;}
+  }
+}
 
 #top-navigation-wrapper {
   background: #444444;
